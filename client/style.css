@@ -1,0 +1,116 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: #1e2a38;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.status-text {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+/* Candidate section */
+.candidates-section {
+  margin-bottom: 25px;
+}
+
+.candidate-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.candidate-list li {
+  background-color: #2f3e4e;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.candidate-list li:hover {
+  background-color: #3e4f60;
+}
+
+/* Vote section */
+.vote-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.vote-section label {
+  font-size: 1rem;
+}
+
+#candidate-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #324456;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#vote-button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#vote-button:hover {
+  background-color: #218838;
+}
+
+/* Status message */
+.status-message {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ffc107;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}

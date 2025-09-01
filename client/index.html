@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voting DApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🗳️ Voting DApp</h1>
+      <p id="account">Account: <span class="status-text">Not connected</span></p>
+      <button id="connect-wallet-btn">🔗 Connect Wallet</button>
+    </header>
+
+    <main>
+      <section class="candidates-section">
+        <h2>Candidates</h2>
+        <ul id="candidate-list" class="candidate-list"></ul>
+      </section>
+
+      <section class="vote-section">
+        <label for="candidate-select">Select Candidate</label>
+        <select id="candidate-select" disabled>
+          <option value="" disabled selected>Select a candidate</option>
+        </select>
+        <button id="vote-button" onclick="vote()" disabled>✅ Vote</button>
+      </section>
+
+      <p id="status" class="status-message"></p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Voting DApp</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
